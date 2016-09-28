@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>dartdevc hello world</title>
+    <script defer src="dart_library.js"></script>
+    <script defer src="dart_sdk.js"></script>
+    <script defer src="hello_world.js"></script>
+
+    <script defer>
+     document.addEventListener("DOMContentLoaded", function(event) {
+      dart_library.start('hello_world');
+     });
+    </script>
+</head>
+<body>
+  <div id="output"></div>
+</body>
+</html>
