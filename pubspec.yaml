@@ -1,0 +1,12 @@
+name: react_hello_world
+version: 0.0.1
+description: No amount of experimentation can ever prove me right; a single experiment can prove me wrong.
+author: Greg Lowe <greg@v7.nz>
+
+environment:
+  sdk: '>=1.19.0 <2.0.0'
+
+dependencies:
+  browser: '^0.10.0'
+  js: '^0.6.0'
+  meta: '^1.0.4'

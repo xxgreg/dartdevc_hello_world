@@ -1,2 +1,6 @@
 /out
+/.packages
+/packages
+/pubspec.lock
+/.idea
 

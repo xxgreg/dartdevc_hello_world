@@ -12,11 +12,21 @@ rm -rf out
 mkdir -p out
 
 # Using the dartdevc shipped with the dart sdk v1.19.1
-dartdevc -o out/hello_world.js --modules legacy -s $DART_SDK/pkg/dev_compiler/lib/js/legacy/dart_sdk.sum hello_world.dart
+dartdevc -o out/hello_world.js \
+         --no-summarize \
+         --modules legacy \
+         -s $DART_SDK/pkg/dev_compiler/lib/js/legacy/dart_sdk.sum \
+         hello_world.dart \
+         react_binding.dart
 
 cp hello_world.html out/
+cp react_binding.js out/
+
 cp $DART_SDK/pkg/dev_compiler/lib/js/legacy/dart_library.js out/
 cp $DART_SDK/pkg/dev_compiler/lib/js/legacy/dart_sdk.js out/
+
+cp react-15.3.2/react.js out/
+cp react-15.3.2/react-dom.js out/
 
 # Install https://pub.dartlang.org/packages/web_server
 # pub global activate web_server
